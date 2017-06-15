@@ -1,0 +1,8 @@
+Map Link : https://mapzen.com/data/metro-extracts/metro/san-antonio_texas/
+File Type: OSM XML
+San Antonio is a city in Texas. I chose this because this had the perfect size of the data that I wanted to study and process.
+
+
+San Antonio is a major city in south-central Texas with a rich colonial heritage. The Alamo, an 18th-century Spanish mission preserved as a museum, marks an infamous 1836 battle for Texan independence from Mexico. Following the San Antonio River, the miles-long River Walk is a landmark pedestrian promenade lined with cafes and shops. HemisFair Park’s 750-ft. Tower of the Americas overlooks the city.
+
+Source: Wiki

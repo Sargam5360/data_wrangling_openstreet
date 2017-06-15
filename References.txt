@@ -1,0 +1,15 @@
+References:
+https://docs.google.com/document/d/1F0Vs14oNEs2idFJR3C_OPxwS6L0HPliOii-QpbmrMo4/pub
+https://github.com/lyvinhhung/Udacity-Data-Analyst-Nanodegree/blob/master/p3%20-%20Wrangle%20OpenStreetMap%20Data/P3%20-%20Data%20Wrangling%20with%20MongoDB.ipynb
+https://docs.mongodb.com/getting-started/shell/import-data/
+Install Mongodb -
+https://www.youtube.com/watch?v=_RQ4lET5ejw
+Install PyMongo -
+https://www.youtube.com/watch?v=OQXYQU9SnPQ&t=100s
+OSM XMKL -
+http://wiki.openstreetmap.org/wiki/OSM_XML
+Map source -
+https://mapzen.com/data/metro-extracts/
+https://mapzen.com/data/metro-extracts/metro/san-antonio_texas/
+Udacity Project Rubric - 
+https://review.udacity.com/#!/rubrics/25/view

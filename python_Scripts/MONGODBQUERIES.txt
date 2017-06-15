@@ -1,0 +1,74 @@
+IMPORT THE JSON INTO A MONBODB SCRIPT:
+
+C:/Program Files/MongoDB/Server/3.4/bin/mongoimport --db mongodacity --collection openstreet --drop --file C:/Users/Sargam/Desktop/udacity/data_wrangling/sanantoniodata.json
+
+
+> db.openstreet.distinct('created.user').length
+802
+> db.openstreet.find({'type':'node'}).count()
+1219852
+> db.openstreet.find({'type':'way'}).count()
+141597
+
+
+
+
+TOP FIVE CONTRIBUTORS
+
+
+> db.openstreet.aggregate([
+ { "$group" : {"_id" : "$created.user",
+    "count" : { "$sum" :1 } } } ,
+    { "$sort"  :  {"count" : -1} },
+     { "$limit" : 5} ] )
+
+
+{ "_id" : "kre3d", "count" : 450266 }
+{ "_id" : "woodpeck_fixbot", "count" : 346697 }
+{ "_id" : "Bellhalla", "count" : 157450 }
+{ "_id" : "homeslice60148", "count" : 133553 }
+{ "_id" : "Vaderf", "count" : 20113 }
+
+
+LIST OF AMENITIES IN SAN ANTONIO
+
+> db.openstreet.aggregate([{'$match' : {'amenity': {'$exists':1}}}, {'$group' : { '_id':'$amenity',       'count' : {'$sum' :1}}},   {'$sort': {'count' :-1}},   {'$limit' : 20 }])
+{ "_id" : "parking", "count" : 1455 }
+{ "_id" : "place_of_worship", "count" : 1202 }
+{ "_id" : "school", "count" : 819 }
+{ "_id" : "fast_food", "count" : 455 }
+{ "_id" : "restaurant", "count" : 403 }
+{ "_id" : "parking_space", "count" : 296 }
+{ "_id" : "fuel", "count" : 248 }
+{ "_id" : "Convenience Store;Gas Station", "count" : 187 }
+{ "_id" : "parking_entrance", "count" : 120 }
+{ "_id" : "pharmacy", "count" : 109 }
+{ "_id" : "grave_yard", "count" : 106 }
+{ "_id" : "bank", "count" : 102 }
+{ "_id" : "toilets", "count" : 98 }
+{ "_id" : "bench", "count" : 88 }
+{ "_id" : "car_wash", "count" : 75 }
+{ "_id" : "kindergarten", "count" : 62 }
+{ "_id" : "college", "count" : 61 }
+{ "_id" : "cafe", "count" : 60 }
+{ "_id" : "hospital", "count" : 57 }
+{ "_id" : "bar", "count" : 49 }
+
+
+QUERY TOP 5 COUSINE
+> db.openstreet.aggregate([{"$match" : {"amenity":{"$exists":1},
+ "amenity": "restaurant",}},
+ {"$group":{"_id":{"Food":"$cuisine"},
+ "count":{"$sum":1}}},
+ {"$project":{"_id" : 0,
+ "Food":"$_id.Food",
+ "Count":"$count"}},
+ {"$sort":{"Count":-1}},
+ {"$limit":6}])
+{ "Food" : null, "Count" : 180 }
+{ "Food" : "mexican", "Count" : 40 }
+{ "Food" : "american", "Count" : 31 }
+{ "Food" : "pizza", "Count" : 22 }
+{ "Food" : "burger", "Count" : 16 }
+{ "Food" : "italian", "Count" : 15 }
+>
