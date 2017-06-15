@@ -5,6 +5,8 @@
 You will choose any area of the world in https://www.openstreetmap.org and use data munging techniques, such as assessing the quality of the data for validity, accuracy, completeness, consistency and uniformity, to clean the OpenStreetMap data for a part of the world that you care about. Finally, you will choose either MongoDB or SQL as the data schema to complete your project.
 What will I learn?
 
+**Project Link :** http://htmlpreview.github.io/?https://github.com/Sargam5360/sargam_data_wrangling_openstreet/blob/master/Data_Wrangling_Openstreet.html
+
 ## After completing the project, you will be able to:
 
 Assess the quality of the data for validity, accuracy, completeness, consistency and uniformity.
