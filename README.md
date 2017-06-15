@@ -7,6 +7,8 @@ What will I learn?
 
 **Project Link :** http://htmlpreview.github.io/?https://github.com/Sargam5360/sargam_data_wrangling_openstreet/blob/master/Data_Wrangling_Openstreet.html
 
+**Udacity Reviews for the project :** https://review.udacity.com/#!/reviews/551834/shared
+
 ## After completing the project, you will be able to:
 
 Assess the quality of the data for validity, accuracy, completeness, consistency and uniformity.
