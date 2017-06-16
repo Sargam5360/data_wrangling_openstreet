@@ -25,4 +25,4 @@ And this project will teach you all of the skills you need to deal with even the
 ## Why is this Important to my Career?
 
 As this New York Times article points out, the less heralded part of doing data science is manually collecting and cleaning data so it can be easily explored and analyzed later. Or otherwise known as “data wrangling” or “data munging” in the data science community. 
-Though not as glamorous as building cool machine learning models, data wrangling is a task that data scientists can spend up to 50-
+Though not as glamorous as building cool machine learning models, data wrangling is a task that data scientists can spend up to 50-70 % of their time in wrangling the data into correct format. After this only they can perform exploratory analysis and visualizations. 
